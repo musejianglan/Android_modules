@@ -3,7 +3,7 @@ package com.musejianglan.rxjavademo.http;
 import com.google.gson.Gson;
 
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
@@ -13,7 +13,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     private static RetrofitClient retrofitClient = new RetrofitClient();
-    private static final String GITHUB_BASEURL = "http://gank.io/api/";//http://gank.io/api/
+//    private static final String GITHUB_BASEURL = "http://gank.io/api/";//http://gank.io/api/
+    private static final String GITHUB_BASEURL = "http://fy.iciba.com/";//http://fy.iciba.com/
 
     public static RetrofitClient getInstance() {
         return retrofitClient;
@@ -34,7 +35,7 @@ public class RetrofitClient {
                 .addConverterFactory(GsonConverterFactory.create(new Gson()))
 
                 //Rx
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
 
                 //创建
                 .build();
