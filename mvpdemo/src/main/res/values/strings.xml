@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MvpDemo</string>
+    <string name="musejianglan">musejianglan</string>
+    <string name="clear">clear</string>
+    <string name="github">github</string>
+    <string name="githubclick">githubclick</string>
+</resources>
