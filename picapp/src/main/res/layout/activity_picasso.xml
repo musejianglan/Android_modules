@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.promise.picapp.picasso.PicassoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="picasso-简单加载_wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_1"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="picasso-简单加载_match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_2"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="picasso-简单加载_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_3"
+            android:background="@color/colorPrimary"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:text="picasso-简单加载_其他"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_4"
+            android:background="@color/colorPrimary"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:text="picasso-简单加载_rotation"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_5"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+
+
+        <TextView
+            android:text="picasso-简单加载_transfortion_crop"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_6"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_7"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_8"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_9"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+
+
+        <TextView
+            android:text="picasso-简单加载_transfortion_color"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_10"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_11"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+
+        <TextView
+            android:text="picasso-简单加载_transfortion_blur"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_12"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_14"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+
+        <TextView
+            android:text="picasso-简单加载_transfortion_mask"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_13"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+
+        <ImageView
+            android:id="@+id/img_picasso_15"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_16"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <ImageView
+            android:id="@+id/img_picasso_17"
+            android:background="@color/colorPrimary"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+    </LinearLayout>
+
+</ScrollView>
