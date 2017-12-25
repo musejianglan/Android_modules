@@ -35,9 +35,9 @@ dependencies {
 ## Android设计模式[mvpdemo](https://github.com/musejianglan/Android_modules/tree/master/mvpdemo)
 * mvp
 
-## 依赖注入[IOCandroiddemo]()
+## 依赖注入[IOCandroiddemo](https://github.com/musejianglan/Android_modules/tree/master/iocandroiddemo)
 * ButterKnife
-* Dagger2
+* Dagger2未完成
 
 ## 图片加载及处理[picapp](https://github.com/musejianglan/Android_modules/tree/master/picapp)
 * Glide
@@ -47,13 +47,12 @@ dependencies {
 ## 响应式编程[rxjavademo](https://github.com/musejianglan/Android_modules/tree/master/rxjavademo)
 * RxJava
 * RxAndroid
-* RxJavaJoins
-* RxBinding
-* Agera
-* RxBus
-* RxPermissions
-* RxLifecycle
-* RxBinding
+* RxJavaJoins未完成
+* RxBinding未完成
+* RxBus未完成
+* RxPermissions未完成
+* RxLifecycle未完成
+* RxBinding未完成
 
 ## 事件总线 [eventbusdemo](https://github.com/musejianglan/Android_modules/tree/master/eventbusdemo)
 * EventBus
@@ -65,14 +64,14 @@ dependencies {
 ## log框架
 
 ## 缓存
-* DiskLruCache
+* DiskLruCache未完成
 
 
 ## 解析
 * Gson
 
 ## 数据库
-* Greendao
+* Greendao未完成
 
 ## 图表
 ## 后台处理
