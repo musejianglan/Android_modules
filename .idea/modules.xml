@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Android_modules.iml" filepath="$PROJECT_DIR$/Android_modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventbusdemo/eventbusdemo.iml" filepath="$PROJECT_DIR$/eventbusdemo/eventbusdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iocandroiddemo/iocandroiddemo.iml" filepath="$PROJECT_DIR$/iocandroiddemo/iocandroiddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvpdemo/mvpdemo.iml" filepath="$PROJECT_DIR$/mvpdemo/mvpdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/picapp/picapp.iml" filepath="$PROJECT_DIR$/picapp/picapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">IoCAndroidDemo</string>
+
+    <array name="arr">
+
+
+        <item>11WEFWFW2</item>
+        <item>11WEF2</item>
+        <item>112WEFWEF</item>
+        <item>112WEFWF</item>
+        <item>1WEFWEF12</item>
+        <item>WFWF112</item>
+        <item>11WEWEFW2</item>
+        <item>11SFWE2</item>
+        <item>112w322</item>
+        <item>asdfasdfasdf</item>
+        <item>阿斯顿发生</item>
+        <item>替换包是的风格</item>
+        <item>bve3rvg</item>
+        <item>4rt5gasdfvW</item>
+        <item>AERGFQAERFGASDFASDF</item>
+        <item>11we2</item>
+        <item>we112</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

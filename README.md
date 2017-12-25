@@ -32,3 +32,53 @@ dependencies {
 }
 
 ```
+## Android设计模式[mvpdemo](https://github.com/musejianglan/Android_modules/tree/master/mvpdemo)
+* mvp
+
+## 依赖注入[IOCandroiddemo]()
+* ButterKnife
+* Dagger2
+
+## 图片加载及处理[picapp](https://github.com/musejianglan/Android_modules/tree/master/picapp)
+* Glide
+* Picasso
+* Fresco
+
+## 响应式编程[rxjavademo](https://github.com/musejianglan/Android_modules/tree/master/rxjavademo)
+* RxJava
+* RxAndroid
+* RxJavaJoins
+* RxBinding
+* Agera
+* RxBus
+* RxPermissions
+* RxLifecycle
+* RxBinding
+
+## 事件总线 [eventbusdemo](https://github.com/musejianglan/Android_modules/tree/master/eventbusdemo)
+* EventBus
+* Otto
+
+## 网络请求
+* retrofit
+
+## log框架
+
+## 缓存
+* DiskLruCache
+
+
+## 解析
+* Gson
+
+## 数据库
+* Greendao
+
+## 图表
+## 后台处理
+## 测试框架
+## 调试框架
+## 性能优化
+
+
+
