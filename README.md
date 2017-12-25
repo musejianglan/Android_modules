@@ -23,6 +23,12 @@ dependencies {
     //Glide3 使用Glide4有点问题，暂时使用3
     implementation 'com.github.bumptech.glide:glide:3.7.0'
 
+    //事件总线
+    //greenrobot eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //square otto
+    implementation 'com.squareup:otto:1.3.8'
+
 }
 
 ```
