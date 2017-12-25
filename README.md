@@ -29,6 +29,10 @@ dependencies {
     //square otto
     implementation 'com.squareup:otto:1.3.8'
 
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
 }
 
 ```
@@ -68,7 +72,7 @@ dependencies {
 
 
 ## 解析
-* Gson
+* Gson未完成
 
 ## 数据库
 * Greendao未完成
