@@ -63,4 +63,9 @@ public class MainActivity extends AppCompatActivity {
 //                    }
 //                });
     }
+
+    public void onGson(View view) {
+
+        startActivity(new Intent(MainActivity.this,GsonActivity.class));
+    }
 }

@@ -10,12 +10,15 @@ import android.widget.ListView;
 import com.promise.picapp.fresco.FrescoActivity;
 import com.promise.picapp.glide.GlideActivity;
 import com.promise.picapp.glide.GlideListActivity;
+import com.promise.picapp.leakcanary.CanaryActivity;
 import com.promise.picapp.picasso.PicassoActivity;
 
 public class MainActivity extends ListActivity {
 
-    String[] actName = {"Glide","GlideListActivity","picasso:picasso","facebook:fresco"};
-    Class[] clazz = {GlideActivity.class,GlideListActivity.class,PicassoActivity.class, FrescoActivity.class};
+    String[] actName = {"Glide","GlideListActivity","picasso:picasso","facebook:fresco","内存检测"};
+    Class[] clazz = {GlideActivity.class,GlideListActivity.class,PicassoActivity.class, FrescoActivity.class,
+            CanaryActivity.class
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

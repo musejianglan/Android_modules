@@ -17,6 +17,20 @@ public class Translation {
     private int status;
     private ContentBean content;
 
+    @Override
+    public String toString() {
+        return "Translation{" + "status=" + status + ", content=" + content + '}';
+    }
+
+    public Translation(int status, ContentBean content) {
+        this.status = status;
+        this.content = content;
+    }
+
+    //public Translation() {
+    //    super();
+    //}
+
     public int getStatus() {
         return status;
     }
@@ -39,6 +53,19 @@ public class Translation {
     }
 
     public static class ContentBean {
+
+        public ContentBean(String from, String to, String out, String vendor, int err_no) {
+            this.from = from;
+            this.to = to;
+            this.out = out;
+            this.vendor = vendor;
+            this.err_no = err_no;
+        }
+
+        public ContentBean() {
+            super();
+        }
+
         /**
          * from : en-EU
          * to : zh-CN

@@ -1,8 +1,7 @@
 package com.musejianglan.rxjavademo.http.interfaces;
 
-import com.musejianglan.rxjavademo.bean.GankFuliBean;
-
 import io.reactivex.Observable;
+import okhttp3.ResponseBody;
 import retrofit2.http.GET;
 
 /**
@@ -13,7 +12,7 @@ public interface GankApi {
 
 
     @GET("data/福利/10/1")
-    Observable<GankFuliBean> gankFuli();
+    Observable<ResponseBody> gankFuli();
 
 
 }

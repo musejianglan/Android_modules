@@ -33,6 +33,9 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
+    //gson
+    compile 'com.google.code.gson:gson:2.8.0'
+
 }
 
 ```
@@ -62,8 +65,9 @@ dependencies {
 * EventBus
 * Otto
 
-## 网络请求
+## 网络请求[rxjavademo](https://github.com/musejianglan/Android_modules/tree/master/rxjavademo)
 * retrofit
+* okhttp
 
 ## log框架
 
@@ -71,11 +75,14 @@ dependencies {
 * DiskLruCache未完成
 
 
-## 解析
-* Gson未完成
+## 解析[rxjavademo](https://github.com/musejianglan/Android_modules/tree/master/rxjavademo)
+* Gson
 
 ## 数据库
 * Greendao未完成
+
+## 内存[picapp](https://github.com/musejianglan/Android_modules/tree/master/picapp)
+* leakcanary
 
 ## 图表
 ## 后台处理

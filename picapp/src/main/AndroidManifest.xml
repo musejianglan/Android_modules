@@ -31,6 +31,14 @@
         </activity>
         <activity android:name=".fresco.FrescoActivity">
         </activity>
+        <activity android:name=".leakcanary.CanaryActivity">
+        </activity>
+
+        <service
+            android:name=".leakcanary.LeakUploadService"
+            android:enabled="false"
+            android:exported="false">
+        </service>
     </application>
 
 </manifest>

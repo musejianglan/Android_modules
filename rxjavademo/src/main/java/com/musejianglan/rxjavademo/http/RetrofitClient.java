@@ -13,8 +13,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     private static RetrofitClient retrofitClient = new RetrofitClient();
-//    private static final String GITHUB_BASEURL = "http://gank.io/api/";//http://gank.io/api/
-    private static final String GITHUB_BASEURL = "http://fy.iciba.com/";//http://fy.iciba.com/
+    private static final String GITHUB_BASEURL = "http://gank.io/api/";//http://gank.io/api/
+//    private static final String GITHUB_BASEURL = "http://fy.iciba.com/";//http://fy.iciba.com/
 
     public static RetrofitClient getInstance() {
         return retrofitClient;

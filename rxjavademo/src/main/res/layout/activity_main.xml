@@ -8,6 +8,12 @@
     tools:context="com.musejianglan.rxjavademo.MainActivity">
 
     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onGson"
+        android:text="gson"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="rx"
