@@ -1,1 +1,1 @@
-include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo', ':iocandroiddemo', ':app_exit'
+include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo', ':iocandroiddemo', ':app_exit', ':app_material_design'
