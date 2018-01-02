@@ -20,8 +20,22 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     //okhttp logging
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    //Glide3 使用Glide4有点问题，暂时使用3
+
+    //glide
     implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //glide transformation
+    implementation 'jp.wasabeef:glide-transformations:2.0.2'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //picasso transformat
+    implementation 'jp.wasabeef:picasso-transformations:2.1.2'
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
+    //fresco
+    implementation 'com.facebook.fresco:fresco:1.7.1'
 
     //事件总线
     //greenrobot eventbus
@@ -80,6 +94,7 @@ dependencies {
 
 ## 数据库
 * Greendao未完成
+* ObjectBox未完成
 
 ## 内存[picapp](https://github.com/musejianglan/Android_modules/tree/master/picapp)
 * leakcanary
