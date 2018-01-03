@@ -1,9 +1,8 @@
 `implementation 'com.android.support:design:26.1.0'`
 
-* DrawerLayout、NavigationView
+* DrawerLayout、NavigationView Toolbar
 
 * Color Palette
-* Toolbar
 * AppBarLayout
 * CollapsingToolbarLayout
 * CoordinatorLayout
