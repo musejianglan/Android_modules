@@ -114,12 +114,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.friends:
                 //
+                openActivity(ScrollingActivity.class);
+                break;
+            case R.id.CoordinatorLayout:
+                //
+                openActivity(CoordinatorLayoutActivity.class);
+                break;
+            case R.id.Toolbar:
+                //
+                openActivity(ToolbarActivity.class);
                 break;
 
         }
 
         item.setChecked(true);
-        mDrawerLayout.closeDrawer(mNavigationView);
+        //mDrawerLayout.closeDrawer(mNavigationView);
 
         return true;
     }
