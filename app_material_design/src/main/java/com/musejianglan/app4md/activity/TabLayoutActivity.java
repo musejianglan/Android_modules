@@ -67,9 +67,9 @@ public class TabLayoutActivity extends AppCompatActivity {
         mTabLayout = findViewById(R.id.id_tablayout);
 
 
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab 1"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab 2"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab 3"));
+        //mTabLayout.addTab(mTabLayout.newTab().setText("Tab 1"));
+        //mTabLayout.addTab(mTabLayout.newTab().setText("Tab 2"));
+        //mTabLayout.addTab(mTabLayout.newTab().setText("Tab 3"));
 
 
         /**
@@ -77,6 +77,12 @@ public class TabLayoutActivity extends AppCompatActivity {
          */
         mTabLayout.setupWithViewPager(mViewPager);
 
+        int tabCount = mTabLayout.getTabCount();
+        for (int i = 0; i < tabCount; i++) {
+            TabLayout.Tab tabAt = mTabLayout.getTabAt(i);
+            tabAt.setIcon(R.mipmap.friends);
+            tabAt.setText("tab"+1);
+        }
 
 
     }
@@ -141,10 +147,10 @@ public class TabLayoutActivity extends AppCompatActivity {
             return mFragments==null?0:mFragments.size();
         }
 
-        //@Override
-        //public CharSequence getPageTitle(int position) {
-        //    return "tab "+(position+1);
-        //}
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return "tab "+(position+1);
+        }
 
 
 
