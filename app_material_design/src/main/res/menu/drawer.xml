@@ -38,6 +38,10 @@
                 android:id="@+id/Toolbar"
                 android:icon="@mipmap/friends"
                 android:title="Toolbar" />
+            <item
+                android:id="@+id/constraintLayout"
+                android:icon="@mipmap/friends"
+                android:title="ConstraintLayout" />
         </menu>
         </item>
 

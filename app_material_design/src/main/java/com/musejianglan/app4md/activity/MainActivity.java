@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //
                 openActivity(ToolbarActivity.class);
                 break;
+            case R.id.constraintLayout:
+                openActivity(ConstraintLayoutActivity.class);
+                break;
 
         }
 

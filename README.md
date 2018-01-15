@@ -105,5 +105,91 @@ dependencies {
 ## 调试框架
 ## 性能优化
 
+----
+## 优秀库
+### Lottie
+这是一个动画库。通过Adobe After Effects做出动画效果，然后通过Bodymovin(AE的插件）导出JSON数据，然后通过该库生成原生动画效果。
+在Google Play Store上可以下载demo。
+该项目在Github上已经由超过8000个star。
+猴赛雷~~ ***Airbnb***公司出品。  
+[Lottie](https://github.com/airbnb/lottie-android)
+### Toasty
+自定义toast库
+[Toasty](https://github.com/GrenderG/Toasty)
+### StyleableToast
+这也是一个Toast增强库。
 
+[StyleableToast](https://github.com/Muddz/StyleableToast)
+
+### Store
+Store是一个异步数据加载和缓存数据的库。
+[Store](https://github.com/NYTimes/Store)
+
+### PreviewSeekBar
+[PreviewSeekBar](https://github.com/rubensousa/PreviewSeekBar)
+
+
+### Chuck
+如果你使用OkHttp作为网络请求库，那么这个Chuck库可以帮助你拦截留存所有的HTTP请求和相应信息。同时也提供UI来显示拦截的信息  
+[Chuck](https://github.com/jgilfelt/chuck)
+
+### CoordinatorTabLayout
+该库可以帮你快速实现TabLayout和CoordinatorLayout的组合效果。  
+[CoordinatorTabLayout](https://github.com/hugeterry/CoordinatorTabLayout)
+
+
+### boxing
+boxing是一个多媒体选择器库。
+
+可以选择一张或者多张图片，提供预览和裁剪功能。
+
+同样支持gif图，选择视频和图像压缩功能。  
+[boxing](https://github.com/Bilibili/boxing)
+
+### excelPanel
+提供一个二维的RecyclerView控件。  
+[excelPanel](https://github.com/zhouchaoyuan/excelPanel)
+
+### HorizontalCalendar
+[HorizontalCalendar](https://github.com/Mulham-Raee/HorizontalCalendar)
+
+### CameraFragment
+
+[CameraFragment](https://github.com/florent37/CameraFragment)
+### AwesomeBar
+该控件时Topbar的一个扩展，类似于Actionbar或者Toolbar。可结合DrawerLayout使用。  
+[AwesomeBar](https://github.com/florent37/AwesomeBar)
+
+### ArcNavigationView
+这是一个有弯曲边缘效果的NavigationView控件。  
+[ArcNavigationView](https://github.com/rom4ek/ArcNavigationView)
+
+### ShimmerRecyclerView
+这个一个自定义的RecyclerView，在加载item的时候可以“bulingbuling”的闪动。可以通过内置的adapter控制效果。
+[ShimmerRecyclerView](https://github.com/sharish/ShimmerRecyclerView)
+
+### Android-SwitchIcon
+这是个自定义的switch控件。扩展自AppCompatImageView，允许使用vector和image。  
+[Android-SwitchIcon](https://github.com/zagum/Android-SwitchIcon)
+
+### CounterFab
+该库针对FloatingActionButton的扩展，可以显示角标。  
+[CounterFab](https://github.com/andremion/CounterFab)
+
+### FlowLayout
+流式标签布局  
+[FlowLayout](https://github.com/nex3z/FlowLayout)
+
+### Shortbread
+Android 7.0允许用户长按桌面图标弹出快捷菜单。该库可以帮助开发者快速开发app shortcuts。
+[Shortbread](https://github.com/MatthiasRobbers/shortbread)
+
+
+[]()
+
+
+[]()
+
+
+[]()
 
