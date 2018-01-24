@@ -36,9 +36,14 @@ public class Practice01ClipRectView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        canvas.save();
+
         int left = (getWidth() - bitmap.getWidth()) / 2;
         int top = (getHeight() - bitmap.getHeight()) / 2;
 
+        canvas.clipRect(left,top,left+300,top+100);
+
         canvas.drawBitmap(bitmap, left, top, paint);
+        canvas.restore();
     }
 }
