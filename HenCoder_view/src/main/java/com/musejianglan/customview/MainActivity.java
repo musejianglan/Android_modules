@@ -7,12 +7,17 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.hencoder.hencoderpracticedraw3.DrawTextActivity;
+import com.hencoder.hencoderpracticedraw4.CanvasClipMatrixActivity;
 import com.musejianglan.customview.view1_1_base.BaseViewActivity;
+import com.musejianglan.customview.view1_2_paint_detail.PaintDetailActivity;
 
 public class MainActivity extends ListActivity {
 
-    private String[] names = {"自定义 View 1-1 绘制基础"};
-    private Class[] activities = {BaseViewActivity.class};
+    private String[] names = {"自定义 View 1-1 绘制基础","自定义 View 1-2 Paint 详解",
+            "自定义 View 1-3 drawText() 文字的绘制","自定义 View 1-4 Canvas 对绘制的辅助 clipXXX() 和 Matrix"};
+    private Class[] activities = {BaseViewActivity.class, PaintDetailActivity.class,
+            DrawTextActivity.class,CanvasClipMatrixActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

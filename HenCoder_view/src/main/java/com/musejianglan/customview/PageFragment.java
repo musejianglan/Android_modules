@@ -1,4 +1,4 @@
-package com.musejianglan.customview.view1_1_base;
+package com.musejianglan.customview;
 
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
-
-import com.musejianglan.customview.R;
 
 
 public class PageFragment extends Fragment {

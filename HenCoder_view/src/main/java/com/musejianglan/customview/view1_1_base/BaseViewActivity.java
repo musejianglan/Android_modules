@@ -1,14 +1,14 @@
 package com.musejianglan.customview.view1_1_base;
 
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.StringRes;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.musejianglan.customview.PageFragment;
+import com.musejianglan.customview.PageModel;
 import com.musejianglan.customview.R;
 
 import java.util.ArrayList;
@@ -67,17 +67,5 @@ public class BaseViewActivity extends AppCompatActivity {
 
 
 
-    private class PageModel {
-        @LayoutRes
-        int sampleLayoutRes;
-        @StringRes
-        int titleRes;
-        @LayoutRes int practiceLayoutRes;
 
-        PageModel(@LayoutRes int sampleLayoutRes, @StringRes int titleRes, @LayoutRes int practiceLayoutRes) {
-            this.sampleLayoutRes = sampleLayoutRes;
-            this.titleRes = titleRes;
-            this.practiceLayoutRes = practiceLayoutRes;
-        }
-    }
 }

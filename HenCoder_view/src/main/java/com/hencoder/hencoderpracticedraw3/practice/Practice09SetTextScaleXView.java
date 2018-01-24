@@ -1,0 +1,46 @@
+package com.hencoder.hencoderpracticedraw3.practice;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class Practice09SetTextScaleXView extends View {
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    String text = "Hello HenCoder";
+
+    public Practice09SetTextScaleXView(Context context) {
+        super(context);
+    }
+
+    public Practice09SetTextScaleXView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public Practice09SetTextScaleXView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+    {
+        paint.setTextSize(60);
+
+        // 使用 Paint.setTextScaleX() 来改变文字宽度
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+        paint.setTextScaleX(1f);
+
+        paint.setLetterSpacing(0.2f);
+
+        paint.setFontFeatureSettings("smcp");
+        // 用 CSS 的 font-feature-settings 的方式来设置文字。
+        // 设置 "small caps"
+
+        canvas.drawText(text, 50, 100, paint);
+    }
+}
