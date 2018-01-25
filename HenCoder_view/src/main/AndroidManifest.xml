@@ -27,6 +27,9 @@
         <activity android:name="com.hencoder.hencoderpracticedraw5.View1_5Activity"/>
         <activity android:name="com.hencoder.hencoderpracticedraw6.Animator1Activity"/>
         <activity android:name="com.hencoder.hencoderpracticedraw7.Animator2Activity"/>
+        <activity android:name="com.hencoder.hencoderpracticelayout1.LayoutMeasureActivity"/>
+        <activity android:name=".layout2.LayoutMeasure2Activity">
+        </activity>
     </application>
 
 </manifest>
