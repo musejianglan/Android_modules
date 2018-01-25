@@ -24,6 +24,8 @@
         </activity>
         <activity android:name="com.hencoder.hencoderpracticedraw4.CanvasClipMatrixActivity">
         </activity>
+        <activity android:name="com.hencoder.hencoderpracticedraw5.View1_5Activity"/>
+        <activity android:name="com.hencoder.hencoderpracticedraw6.Animator1Activity"/>
     </application>
 
 </manifest>
