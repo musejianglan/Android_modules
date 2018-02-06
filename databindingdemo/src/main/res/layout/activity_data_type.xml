@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <!--<import type="java.util.List" />
+        <import type="java.util.Map" />-->
+        <import type="java.util.List"/>
+        <import type="java.util.Map"/>
+
+        <variable
+            name="str"
+            type="String"/>
+
+        <variable
+            name="nums"
+            type="int"/>
+
+        <!--泛型的支持会在编译时期报红线，但是是可以直接运行的
+      但是需要通过转义字符才行，如：<号用&lt表示;>号用&gt表示;-->
+        <variable
+            name="listsss"
+            type="List&lt;String&gt;"/>
+        <variable
+            name="mappp"
+            type="Map&lt;String,String&gt;"/>
+
+        <variable
+            name="array"
+            type="String[]" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{str}"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(nums)}"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:text="@{listsss.get(0)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--key要用``包裹，注意，这个不是单引号，而是Tab键上面的那个键的那个点。-->
+        <TextView
+            android:text="@{mappp.get(`key`)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@{array[0]}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</layout>
