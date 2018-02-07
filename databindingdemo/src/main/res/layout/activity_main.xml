@@ -16,6 +16,10 @@
             name="clicker"
             type="android.view.View.OnClickListener"
             />
+
+        <variable
+            name="imgUrl"
+            type="String"/>
     </data>
     <LinearLayout
         android:orientation="vertical"
@@ -23,14 +27,23 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/txt_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.name}"/>
 
         <TextView
+            android:id="@+id/text_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{String.valueOf(user.age)}"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:imageUrl="@{imgUrl}"
             />
 
         <Button
@@ -44,6 +57,13 @@
         <Button
             android:id="@+id/btn_22"
             android:text="RecyclerView"
+            android:onClick="@{clicker}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/beanNotify"
+            android:text="动态更新textview"
             android:onClick="@{clicker}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

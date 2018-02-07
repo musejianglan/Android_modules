@@ -186,6 +186,124 @@ public class MainActivity extends AppCompatActivity {
         
 ```
 
+### BindingAdapter注解设置自定义属性 
+
+
+```
+
+public class DataBindingHelper {
+
+
+    /**
+     * 1.加载图片,无需手动调用此方法
+     * 2.使用@BindingAdapter注解设置自定义属性的名称，imageUrl就是属性的名称，
+     * 当ImageView中使用imageUrl属性时，会自动调用loadImage方法
+     * 必须是静态的方法
+     * @param imageView 控件
+     * @param url 属性值
+     */
+    @BindingAdapter("imageUrl")
+    public static void loadImage(ImageView imageView,String url){
+
+        //Glid
+        Glide.with(imageView.getContext())
+                .load(url)
+                .into(imageView);
+
+    }
+    
+    注意：方法的第一个参数必须是view
+    Error:(16, 17) 错误: @BindingAdapter loadImage(java.lang.String,android.widget.ImageView) 
+    is applied to a method that has two parameters, the first must be a View type
+    
+    <variable
+                name="imgUrl"
+                type="String"/>
+                
+    <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:imageUrl="@{imgUrl}"
+                />
+                
+     viewDataBinding.setImgUrl("http://7xi8d6.com1.z0.glb.clouddn.com/20180129074038_O3ydq4_Screenshot.jpeg");
+}
+```
+
+### View with ID
+
+> 布局中每一个带有 ID 的 View，都会生成一个 public final 字段。binding 过程会做一个简单的赋值，在 binding 类中保存对应 ID 的 View。这种机制相比调用 
+
+```
+ <TextView
+            android:id="@+id/text_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(user.age)}"
+            />
+ 
+ <Button
+             android:id="@+id/btn_22"
+             android:text="RecyclerView"
+             android:onClick="@{clicker}"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+             
+             viewDataBinding.btn1.setText("绑定多种数据类型");
+             viewDataBinding.textAge.setText("更改age:"+2222);
+
+ 生成规则：去掉下划线后首字母大写
+```
+
+### 动态更新
+
+#### BaseObservable
+
+> 步骤
+1. bean继承BaseObservable
+2. 用 @Bindable 标记过 getter 方法
+3. 通过调用notifyPropertyChanged(BR.属性名称)来通知系统 
+4. 通过set方法更新属性
+```
+public class UserBean extends BaseObservable {
+
+    private String name;
+    private int age;
+
+    public UserBean(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Bindable
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+        notifyPropertyChanged(BR.name);
+    }
+
+    @Bindable
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+        notifyPropertyChanged(BR.age);
+    }
+}
+
+userBean.setAge((int) Math.random());
+userBean.setName(new Date().getTime()+"=====>>>>");
+```
+   
+
+
+#### ObservableFields
+
 ---
 
 #### 为什么配置了 dataBinding{enabled = true}之后就可以使用dataBinding方式进行开发了？

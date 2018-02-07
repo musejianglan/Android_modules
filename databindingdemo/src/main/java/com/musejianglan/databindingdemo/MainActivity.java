@@ -10,17 +10,27 @@ import android.widget.Toast;
 import com.musejianglan.databindingdemo.bean.UserBean;
 import com.musejianglan.databindingdemo.databinding.ActivityMainBinding;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
+    UserBean userBean;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
         ActivityMainBinding viewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        UserBean userBean = new UserBean("暮色将蓝",20);
+        userBean = new UserBean("暮色将蓝",20);
         viewDataBinding.setUser(userBean);
         viewDataBinding.setClicker(this);
+
+        viewDataBinding.setImgUrl("http://7xi8d6.com1.z0.glb.clouddn.com/20180129074038_O3ydq4_Screenshot.jpeg");
+
+        viewDataBinding.btn1.setText("绑定多种数据类型");
+
+        viewDataBinding.textAge.setText("更改age:"+2222);
     }
 
     @Override
@@ -34,6 +44,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_22:
                 toast("来自按钮222");
                 startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
+                break;
+            case R.id.beanNotify:
+                userBean.setAge((int) new Date().getTime());
+                userBean.setName(new Date().getTime()+"=====>>>>");
                 break;
         }
 
