@@ -1,1 +1,1 @@
-include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo', ':iocandroiddemo', ':app_exit', ':app_material_design', ':HenCoder_view', ':databindingdemo', ':droidpermission'
+include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo', ':iocandroiddemo', ':app_exit', ':app_material_design', ':HenCoder_view', ':databindingdemo', ':droidpermission', ':floatwindow'

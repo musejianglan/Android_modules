@@ -40,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
             Manifest.permission.BODY_SENSORS,
             Manifest.permission.RECEIVE_SMS,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-
-            Manifest.permission.SYSTEM_ALERT_WINDOW,
-
     };
 
     private static final String PACKAGE_URL_SCHEME = "package:"; // 方案
@@ -50,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     List<String> mPermissionList = new ArrayList<>();
 
     private static final int PERMISSION_REQUEST_CODE = 0; // 系统权限管理页面的参数
+    public static int OVERLAY_PERMISSION_REQ_CODE = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +101,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
+        }else if (requestCode == OVERLAY_PERMISSION_REQ_CODE) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
+                toast("权限授予失败，无法开启悬浮窗");
+            } else {
+                toast("权限授予成功！");
+            }
+
         }
     }
 
@@ -145,5 +150,27 @@ public class MainActivity extends AppCompatActivity {
 
     public void toast(String msg) {
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+    }
+
+    public void requestFloatWindow(View view) {
+        //开启悬浮框前先请求权限
+        askForPermission();
+
+    }
+
+    /**
+     * 请求用户给予悬浮窗的权限
+     */
+    public void askForPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.canDrawOverlays(this)) {
+                toast("未获取悬浮窗权限，请授权");
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                        Uri.parse("package:" + getPackageName()));
+                startActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
+            } else {
+                toast("已获取悬浮窗权限");
+            }
+        }
     }
 }
