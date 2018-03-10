@@ -1,0 +1,7 @@
+ext{
+    externalCompileSdkVersion = 27
+    externalBuildToolsVersion = "27.0.0"
+    externalMinSdkVersion = 16
+    externalTargetSdkVersion = 27
+}
+
