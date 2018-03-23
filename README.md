@@ -107,6 +107,9 @@ dependencies {
 ## 调试框架
 ## 性能优化
 
+
+
+## 功能
 [shortcuts动态添加](https://github.com/musejianglan/Android_modules/tree/master/droidshortcuts)
 
 [Android 动态权限](https://github.com/musejianglan/Android_modules/tree/master/droidpermission)
