@@ -93,7 +93,7 @@ dependencies {
 * Gson
 
 ## 数据库
-* Greendao未完成
+* Greendao[GreenDad](https://github.com/musejianglan/PdfReader)[GreenDaodoc](https://github.com/musejianglan/Android_modules/blob/master/GreenDao.md)
 * ObjectBox未完成
 
 ## 内存[picapp](https://github.com/musejianglan/Android_modules/tree/master/picapp)
