@@ -107,6 +107,13 @@ dependencies {
 
 ----
 ## 优秀库
+
+### Shortbread
+Android 7.0允许用户长按桌面图标弹出快捷菜单。该库可以帮助开发者快速开发app shortcuts。
+[Shortbread](https://github.com/MatthiasRobbers/shortbread)
+
+[shortcuts动态添加]()
+
 ### Lottie
 这是一个动画库。通过Adobe After Effects做出动画效果，然后通过Bodymovin(AE的插件）导出JSON数据，然后通过该库生成原生动画效果。
 在Google Play Store上可以下载demo。
@@ -180,16 +187,8 @@ boxing是一个多媒体选择器库。
 流式标签布局  
 [FlowLayout](https://github.com/nex3z/FlowLayout)
 
-### Shortbread
-Android 7.0允许用户长按桌面图标弹出快捷菜单。该库可以帮助开发者快速开发app shortcuts。
-[Shortbread](https://github.com/MatthiasRobbers/shortbread)
 
 
-[]()
 
 
-[]()
-
-
-[]()
 
