@@ -94,7 +94,7 @@ dependencies {
 
 ## 数据库
 * Greendao
-  [GreenDad](https://github.com/musejianglan/PdfReader)
+  [GreenDao](https://github.com/musejianglan/PdfReader)
   [GreenDaodoc](https://github.com/musejianglan/Android_modules/blob/master/GreenDao.md)
 * ObjectBox未完成
 
@@ -103,7 +103,10 @@ dependencies {
 
 ## 图表
 ## 后台处理
-## 测试框架
+## 测试框架（Crash）
+
+* 腾讯bugly [腾讯bugly](https://github.com/musejianglan/PdfReader)
+
 ## 调试框架
 ## 性能优化
 
