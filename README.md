@@ -105,6 +105,11 @@ dependencies {
 ## 调试框架
 ## 性能优化
 
+[shortcuts动态添加](https://github.com/musejianglan/Android_modules/tree/master/droidshortcuts)
+
+[Android 动态权限](https://github.com/musejianglan/Android_modules/tree/master/droidpermission)
+
+[Android 悬浮窗权限及展示](https://github.com/musejianglan/Android_modules/tree/master/floatwindow)
 ----
 ## 优秀库
 
@@ -112,7 +117,6 @@ dependencies {
 Android 7.0允许用户长按桌面图标弹出快捷菜单。该库可以帮助开发者快速开发app shortcuts。
 [Shortbread](https://github.com/MatthiasRobbers/shortbread)
 
-[shortcuts动态添加]()
 
 ### Lottie
 这是一个动画库。通过Adobe After Effects做出动画效果，然后通过Bodymovin(AE的插件）导出JSON数据，然后通过该库生成原生动画效果。
