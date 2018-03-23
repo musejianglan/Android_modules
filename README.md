@@ -103,11 +103,12 @@ dependencies {
 
 ## 图表
 ## 后台处理
-## 测试框架（Crash）
+## 测试框架（Crash）& 调试框架
 
 * 腾讯bugly [腾讯bugly](https://github.com/musejianglan/PdfReader)
 
-## 调试框架
+* facebook/stetho未完成
+
 ## 性能优化
 
 
