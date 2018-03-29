@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:background="@android:color/white"
+        app:dividerPadding="5dp"
+        app:showDividers="middle|beginning|end"
+        app:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatButton
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:text="@string/dialog_fragment"
+            android:id="@+id/dialog_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+</android.support.v4.widget.NestedScrollView>

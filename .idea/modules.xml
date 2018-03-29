@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/floatwindow/floatwindow.iml" filepath="$PROJECT_DIR$/floatwindow/floatwindow.iml" />
       <module fileurl="file://$PROJECT_DIR$/iocandroiddemo/iocandroiddemo.iml" filepath="$PROJECT_DIR$/iocandroiddemo/iocandroiddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvpdemo/mvpdemo.iml" filepath="$PROJECT_DIR$/mvpdemo/mvpdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mydialog/mydialog.iml" filepath="$PROJECT_DIR$/mydialog/mydialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/picapp/picapp.iml" filepath="$PROJECT_DIR$/picapp/picapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
     </modules>

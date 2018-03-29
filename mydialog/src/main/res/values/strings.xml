@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyDialog</string>
+    <string name="dialog_fragment">dialog fragment</string>
+</resources>

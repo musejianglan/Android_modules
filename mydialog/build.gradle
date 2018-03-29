@@ -3,10 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion externalCompileSdkVersion
 
-
-
     defaultConfig {
-        applicationId "com.musejianglan.app4exit"
+        applicationId "com.promise.mydialog"
         minSdkVersion externalMinSdkVersion
         targetSdkVersion externalTargetSdkVersion
         versionCode 1
@@ -34,6 +32,9 @@ dependencies {
     androidTestImplementation externalAndoridSupportTestRunner
     androidTestImplementation externalAndroidSupportTestEspressoCore
 
-    //greenrobot eventbus
-    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation externalButterKnife
+    annotationProcessor externalButterKnifeCompiler
+
+    implementation externalMaterialDialogsCore
+    implementation externalMaterialDialogsCommons
 }
