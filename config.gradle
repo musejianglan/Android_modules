@@ -4,13 +4,17 @@ ext{
     externalMinSdkVersion = 16
     externalTargetSdkVersion = 27
 
-    externalAndroidSupportAppcompatV7 = 'com.android.support:appcompat-v7:27.0.0'
-    externalAndroidSupportConstraintConstraintLayout = 'com.android.support.constraint:constraint-layout:1.0.2'
     externalJunit = 'junit:junit:4.12'
     externalAndoridSupportTestRunner = 'com.android.support.test:runner:1.0.1'
     externalAndroidSupportTestEspressoCore = 'com.android.support.test.espresso:espresso-core:3.0.1'
 
+    externalAndroidSupportAppcompatV7 = 'com.android.support:appcompat-v7:27.0.0'
+    externalAndroidSupportSupportV4 = 'com.android.support:support-v4:27.0.0'
+    externalAndroidSupportConstraintConstraintLayout = 'com.android.support.constraint:constraint-layout:1.0.2'
     externalAndroidSupporRecyclerView = 'com.android.support:recyclerview-v7:27.0.0'
+    externalAndroidSupportDesign = 'com.android.support:design:27.0.0'
+    externalAndroidSupportCardview = 'com.android.support:cardview-v7:27.0.0'
+    externalAndroidSupportVectorDrawable = 'com.android.support:support-vector-drawable:27.0.0'
 
 
     externalButterKnife = 'com.jakewharton:butterknife:8.8.1'
