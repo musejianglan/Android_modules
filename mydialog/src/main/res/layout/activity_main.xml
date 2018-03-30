@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".MainActivity">
 
     <android.support.v7.widget.LinearLayoutCompat
         android:background="@android:color/white"
-        app:dividerPadding="5dp"
         app:showDividers="middle|beginning|end"
         app:divider="@drawable/divider"
         android:orientation="vertical"
@@ -18,8 +18,26 @@
         <android.support.v7.widget.AppCompatButton
             android:textColor="@android:color/white"
             android:background="@color/colorAccent"
-            android:text="@string/dialog_fragment"
+            android:text="@string/dialog_fragment1"
             android:id="@+id/dialog_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:text="@string/dialog_fragment3"
+            android:id="@+id/dialog_fragment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:text="@string/dialog_fragment"
+            android:id="@+id/dialog_fragment2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
