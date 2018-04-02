@@ -1,6 +1,7 @@
 package com.promise.mydialog;
 
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -15,6 +16,15 @@ import android.support.v4.app.DialogFragment;
  */
 public class SysDialogFragment extends DialogFragment {
 
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        if (!(activity instanceof DialogCallBack)) {
+            throw new IllegalStateException("fragment所在的Activity必须实现Callbacks接口");
+        }
+        super.onAttach(activity);
+    }
+
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -25,7 +35,8 @@ public class SysDialogFragment extends DialogFragment {
                 .setPositiveButton("我同意", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        DialogCallBack callback = (DialogCallBack) getActivity();
+                        callback.onDialogCallBack("test");
                     }
                 })
                 .setNegativeButton("不同意", new DialogInterface.OnClickListener() {

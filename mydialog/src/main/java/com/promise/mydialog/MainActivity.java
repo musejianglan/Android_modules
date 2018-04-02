@@ -2,11 +2,12 @@ package com.promise.mydialog;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements DialogCallBack{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +38,10 @@ public class MainActivity extends AppCompatActivity {
         new MyDialogFragment()
                 .show(getSupportFragmentManager(), MainActivity.class.getSimpleName());
 
+    }
+
+    @Override
+    public void onDialogCallBack(String data) {
+        Toast.makeText(this, data, Toast.LENGTH_SHORT).show();
     }
 }
