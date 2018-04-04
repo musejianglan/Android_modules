@@ -22,5 +22,18 @@ ext{
 
     externalMaterialDialogsCore = 'com.afollestad.material-dialogs:core:0.9.6.0'
     externalMaterialDialogsCommons = 'com.afollestad.material-dialogs:commons:0.9.6.0'
+
+    externalEventBus = 'org.greenrobot:eventbus:3.1.1'
+    externalOtto = 'com.squareup:otto:1.3.8'
+
+    externalGlide = 'com.github.bumptech.glide:glide:4.1.1'
+
+    externalRetrofit2 = 'com.squareup.retrofit2:retrofit:2.3.0'
+    externalRetrofit2ConverterGson = 'com.squareup.retrofit2:converter-gson:2.1.0'
+    externalOkhttp3LoggingInterceptor = 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    externalRetrofit2AdapterRxjava2= 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    externalRxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    externalRxjava2 = 'io.reactivex.rxjava2:rxjava:2.1.7'
 }
 

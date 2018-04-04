@@ -61,9 +61,9 @@ public class MeiAdapter extends BaseAdapter {
         String url = resultsBean.getUrl();
         Glide.with(context)
                 .load(url)
-                .fitCenter()
-                .placeholder(R.mipmap.ic_launcher_round)
-                .error(R.mipmap.ic_launcher_round)
+//                .fitCenter()
+//                .placeholder(R.mipmap.ic_launcher_round)
+//                .error(R.mipmap.ic_launcher_round)
                 .into(viewholder.imageView);
         return convertView;
     }

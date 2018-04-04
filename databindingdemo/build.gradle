@@ -38,5 +38,5 @@ dependencies {
     androidTestImplementation externalAndroidSupportTestEspressoCore
     implementation externalAndroidSupporRecyclerView
 
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation externalGlide
 }
