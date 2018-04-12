@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/HenCoder_view" />
+            <option value="$PROJECT_DIR$/animationdemo" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app_exit" />
             <option value="$PROJECT_DIR$/app_material_design" />

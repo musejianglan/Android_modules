@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AnimationDemo</string>
+    <string name="title_xml">XML加载</string>
+    <string name="title_java">代码控制</string>
+</resources>
