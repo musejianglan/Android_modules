@@ -3,8 +3,6 @@ package com.musejianglan.databindingdemo.helper;
 import android.databinding.BindingAdapter;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-import com.musejianglan.databindingdemo.R;
 
 /**
  * Created by liulei on 2018/2/7.
@@ -24,11 +22,11 @@ public class DataBindingHelper {
     public static void loadImage(ImageView imageView,String url){
 
         //Glid
-        Glide.with(imageView.getContext())
-                .load(url)
-                .error(R.mipmap.ic_launcher)
-                .placeholder(R.mipmap.ic_launcher_round)
-                .into(imageView);
+//        Glide.with(imageView.getContext())
+//                .load(url)
+//                .error(R.mipmap.ic_launcher)
+//                .placeholder(R.mipmap.ic_launcher_round)
+//                .into(imageView);
 
     }
 }

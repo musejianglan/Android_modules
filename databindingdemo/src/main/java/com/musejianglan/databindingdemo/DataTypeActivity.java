@@ -34,9 +34,9 @@ public class DataTypeActivity extends AppCompatActivity {
 
         String[] arrays = new String[]{"rrrrr","eeee"};
 
-        binding.setListsss(list);
-
-        binding.setMappp(map);
+//        binding.setListsss(list);
+//
+//        binding.setMappp(map);
 
         binding.setArray(arrays);
     }

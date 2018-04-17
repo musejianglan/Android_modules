@@ -58,7 +58,7 @@ dependencies {
 
 ## 依赖注入[IOCandroiddemo](https://github.com/musejianglan/Android_modules/tree/master/iocandroiddemo)
 * ButterKnife
-* Dagger2未完成
+* Dagger2
 
 ## 图片加载及处理[picapp](https://github.com/musejianglan/Android_modules/tree/master/picapp)
 * Glide

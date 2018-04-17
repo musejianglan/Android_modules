@@ -9,11 +9,14 @@ import android.widget.ListView;
 
 import com.promise.iocandroiddemo.ButterKnife.ButterKnifeActivity;
 import com.promise.iocandroiddemo.ButterKnife.FragmentsActivity;
+import com.promise.iocandroiddemo.dagger.Dagger2Activity;
+
+import dagger.android.DaggerActivity;
 
 public class MainActivity extends ListActivity {
 
-    String[] names = {"ButterKnifeActivity","FragmentsActivity"};
-    Class[] clazz = {ButterKnifeActivity.class,FragmentsActivity.class};
+    String[] names = {"ButterKnifeActivity","FragmentsActivity","Dagger2"};
+    Class[] clazz = {ButterKnifeActivity.class,FragmentsActivity.class, Dagger2Activity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
