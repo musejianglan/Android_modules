@@ -39,7 +39,7 @@ dependencies {
     androidTestImplementation externalAndroidSupportTestEspressoCore
     implementation 'com.android.support:recyclerview-v7:27.1.1'
 
-    implementation ('com.github.bumptech.glide:glide:4.6.1'){
+    implementation('com.github.bumptech.glide:glide:4.6.1') {
         exclude group: 'com.android.support', module: 'support-v4'
     }
 }

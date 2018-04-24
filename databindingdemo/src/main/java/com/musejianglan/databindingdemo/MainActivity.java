@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewDataBinding.setUser(userBean);
         viewDataBinding.setClicker(this);
 
+        viewDataBinding.setVariable(BR.user, userBean);
+
         viewDataBinding.setImgUrl("http://7xi8d6.com1.z0.glb.clouddn.com/20180129074038_O3ydq4_Screenshot.jpeg");
 
         viewDataBinding.btn1.setText("绑定多种数据类型");
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.beanNotify:
                 userBean.setAge((int) new Date().getTime());
                 userBean.setName(new Date().getTime()+"=====>>>>");
+                break;
+
+            case R.id.event_deal:
+                startActivity(new Intent(MainActivity.this,EventDealActivity.class));
                 break;
         }
 
