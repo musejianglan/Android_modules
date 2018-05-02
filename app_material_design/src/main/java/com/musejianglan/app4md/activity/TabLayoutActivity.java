@@ -81,7 +81,7 @@ public class TabLayoutActivity extends AppCompatActivity {
         for (int i = 0; i < tabCount; i++) {
             TabLayout.Tab tabAt = mTabLayout.getTabAt(i);
             tabAt.setIcon(R.mipmap.friends);
-            tabAt.setText("tab"+1);
+            tabAt.setText("tab"+i);
         }
 
 
@@ -149,7 +149,7 @@ public class TabLayoutActivity extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return "tab "+(position+1);
+            return "tabss "+(position+1);
         }
 
 
