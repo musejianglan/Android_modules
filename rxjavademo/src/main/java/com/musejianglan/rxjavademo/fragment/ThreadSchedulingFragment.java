@@ -81,7 +81,7 @@ public class ThreadSchedulingFragment extends BaseFragment {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                textView.setText(textView.getText()+"\n\n"+str);
+                textView.setText(textView.getText()+"\n"+str);
             }
         });
 

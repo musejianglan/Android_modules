@@ -16,11 +16,13 @@ import java.util.Date;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,6 +45,19 @@ public class RxBaseFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_rx_base, container, false);
         ButterKnife.bind(this, view);
         return view;
+    }
+
+    @OnClick(R.id.just_Consumer)
+    public void just_Consumer(){
+
+        Observable.just(1,2,3,4,5,6,7,8,9)
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(Integer integer) throws Exception {
+                        setTextView("just >>>> "+integer);
+                    }
+                });
+
     }
 
     @OnClick(R.id.button3)
@@ -90,7 +105,19 @@ public class RxBaseFragment extends BaseFragment {
             @Override
             public void onComplete() {
                 Log.e(TAG, "onComplete" + "\n" );
-                textView.setText("rxjava请求完成" + System.currentTimeMillis());
+//                textView.setText("rxjava请求完成" + System.currentTimeMillis());
+                setTextView("rxjava基本用法完成" + System.currentTimeMillis());
+            }
+        });
+
+    }
+
+    public void setTextView(final String str){
+
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                textView.setText(textView.getText()+"\n"+str);
             }
         });
 

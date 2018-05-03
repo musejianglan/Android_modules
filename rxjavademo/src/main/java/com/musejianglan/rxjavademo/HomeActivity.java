@@ -9,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.musejianglan.rxjavademo.fragment.ChainingOperatorsFilterFragment;
 import com.musejianglan.rxjavademo.fragment.ChainingOperatorsMapFragment;
 import com.musejianglan.rxjavademo.fragment.RxBaseFragment;
 import com.musejianglan.rxjavademo.fragment.ThreadSchedulingFragment;
@@ -39,6 +40,9 @@ public class HomeActivity extends AppCompatActivity {
 
         titles.add("操作符-map");
         fragments.add(new ChainingOperatorsMapFragment());
+
+        titles.add("操作符-filter");
+        fragments.add(new ChainingOperatorsFilterFragment());
 
     }
 

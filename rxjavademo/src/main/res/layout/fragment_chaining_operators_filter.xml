@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragment.RxBaseFragment">
+    tools:context=".fragment.ChainingOperatorsMapFragment">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -14,29 +14,22 @@
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="订阅者Observer，一个被观察者Observable，最后调用subscribe()方法将两者绑定起来！\n" />
+            android:text="过滤，筛选，添加对事件是否需要发送的判断。\n" />
     </android.support.v4.widget.NestedScrollView>
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_weight="0.5"
         android:layout_height="0dp"
         android:rowCount="3"
-        android:columnCount="2"
+        android:columnCount="3"
         >
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="基本用法" />
-
-        <Button
-            android:id="@+id/just_Consumer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="just基本用-Consumer" />
-
-
+            android:text="操作符filter" />
     </GridLayout>
 
 </android.support.v7.widget.LinearLayoutCompat>
