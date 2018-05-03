@@ -121,6 +121,7 @@ public class RxBaseFragment extends BaseFragment {
                 e.onComplete();
                 Log.e(TAG, "Observable emit 4" + "\n" );
                 e.onNext(4);
+                e.onComplete();
             }
         }).subscribe(new Observer<Integer>() {
             // 第二步：初始化Observer
