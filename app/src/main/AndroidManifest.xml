@@ -16,19 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".KeepLiveActivity"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:finishOnTaskLaunch="false"
-            android:launchMode="singleInstance"
-            android:process=":live"
-            android:theme="@style/LiveActivityStyle" />
 
-        <receiver
-            android:name=".KeepLiveReceiver"
-            android:enabled="false"
-            android:exported="false"></receiver>
     </application>
 
 </manifest>
