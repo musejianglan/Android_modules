@@ -2,7 +2,9 @@ package com.musejianglan.rxjavademo.fragment;
 
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +14,7 @@ import android.widget.TextView;
 import com.musejianglan.rxjavademo.R;
 
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,8 +24,10 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
+import io.reactivex.Scheduler;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -47,8 +52,49 @@ public class RxBaseFragment extends BaseFragment {
         return view;
     }
 
+    @OnClick(R.id.interval)
+    public void interval(){
+
+//        Observable.interval(0, 1000, TimeUnit.MILLISECONDS)
+//                .subscribe(new Consumer<Long>() {
+//                    @Override
+//                    public void accept(Long aLong) throws Exception {
+//                        setTextView("interval >>>> "+aLong);
+//                    }
+//                });
+        Observable.interval(0,1, TimeUnit.SECONDS)
+                .subscribe(new Observer<Long>() {
+                    Disposable disposable;
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        disposable = d;
+                    }
+
+                    @Override
+                    public void onNext(Long aLong) {
+                        setTextView("interval <<<>>> "+aLong);
+                        if (aLong == 10) {
+                            disposable.dispose();
+                        }
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        setTextView("interval >>>> 异常");
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        setTextView("interval >>>> 完成");
+                    }
+                });
+
+    }
+
     @OnClick(R.id.just_Consumer)
     public void just_Consumer(){
+        setTextView(null);
+        setTextView("Consumer是简易版的Observer，他有多重重载，可以自定义你需要处理的信息，我这里调用的是只接受onNext消息的方法， 他只提供一个回调接口accept，由于没有onError和onCompete，无法再 接受到onError或者onCompete之后，实现函数回调。无法回调，并不代表不接收，他还是会接收到onCompete和onError之后做出默认操作，也就是监听者（Consumer）不在接收Observable发送的消息");
 
         Observable.just(1,2,3,4,5,6,7,8,9)
                 .subscribe(new Consumer<Integer>() {
@@ -112,14 +158,20 @@ public class RxBaseFragment extends BaseFragment {
 
     }
 
-    public void setTextView(final String str){
+    public void setTextView(final @Nullable String str){
 
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                textView.setText(textView.getText()+"\n"+str);
+                if (TextUtils.isEmpty(str)) {
+                    textView.setText("");
+
+                }else {
+                    textView.setText(textView.getText()+"\n"+str);
+                }
             }
         });
+
 
     }
 
