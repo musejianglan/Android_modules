@@ -10,20 +10,12 @@ import com.musejianglan.rxjavademo.http.interfaces.GankApi;
 public class ApiFactory {
 
 
-    private static GankApi gankApi;
 
     public static GankApi gitHubAPI() {
-        if (gankApi == null) {
-            gankApi = RetrofitClient.getInstance().getRetrofit().create(GankApi.class);
-        }
-
-        return gankApi;
+        return RetrofitManager.getInstance().getRetrofit().create(GankApi.class);
     }
 
-    private static FyApi fyApi;
     public static FyApi getFyApi(){
-        if (fyApi ==null) fyApi = RetrofitClient.getInstance().getRetrofit().create(FyApi.class);
-
-        return fyApi;
+        return RetrofitManager.getInstance().getRetrofit().create(FyApi.class);
     }
 }

@@ -17,19 +17,19 @@ import okhttp3.logging.HttpLoggingInterceptor;
  * Created by liulei on 2017/12/15.
  */
 
-public class OKHttpFactory {
+public class OKHttpManager {
     private final OkHttpClient okHttpClient;
 
     private static final int TIMEOUT_READ = 25;
     private static final int TIMEOUT_CONNECTION = 25;
 
-    private static final OKHttpFactory ourInstance = new OKHttpFactory();
+    private static final OKHttpManager ourInstance = new OKHttpManager();
 
-    public static OKHttpFactory getInstance() {
+    public static OKHttpManager getInstance() {
         return ourInstance;
     }
 
-    private OKHttpFactory() {
+    private OKHttpManager() {
         //打印请求Log
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);

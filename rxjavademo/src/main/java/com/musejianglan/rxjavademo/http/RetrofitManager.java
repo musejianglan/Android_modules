@@ -10,23 +10,23 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by liulei on 2017/12/15.
  */
 
-public class RetrofitClient {
+public class RetrofitManager {
 
-    private static RetrofitClient retrofitClient = new RetrofitClient();
+    private static RetrofitManager retrofitManager = new RetrofitManager();
     private static final String GITHUB_BASEURL = "http://gank.io/api/";//http://gank.io/api/
 //    private static final String GITHUB_BASEURL = "http://fy.iciba.com/";//http://fy.iciba.com/
 
-    public static RetrofitClient getInstance() {
-        return retrofitClient;
+    public static RetrofitManager getInstance() {
+        return retrofitManager;
     }
 
     private final Retrofit retrofit;
 
-    private RetrofitClient(){
+    private RetrofitManager(){
 
         retrofit = new Retrofit.Builder()
                 //设置OKHttpClient
-                .client(OKHttpFactory.getInstance().getOkHttpClient())
+                .client(OKHttpManager.getInstance().getOkHttpClient())
 
                 //baseUrl
                 .baseUrl(GITHUB_BASEURL)
