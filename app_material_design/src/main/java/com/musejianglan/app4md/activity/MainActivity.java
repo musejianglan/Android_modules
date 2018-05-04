@@ -12,9 +12,11 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.musejianglan.app4md.R;
+import com.musejianglan.app4md.activity.tab.TabListActivity;
 import com.musejianglan.app4md.fragment.HomeFragment;
 import com.musejianglan.app4md.fragment.SettingFragment;
 import com.musejianglan.app4md.fragment.ThemeFragment;
@@ -134,5 +136,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //mDrawerLayout.closeDrawer(mNavigationView);
 
         return true;
+    }
+
+    /**
+     * 跳转到tabactivity
+     * author:liulei
+     *
+     * created at 2018/5/4 11:35
+     */
+    public void tablayout(View view) {
+
+        startActivity(new Intent(MainActivity.this,TabListActivity.class));
+
     }
 }

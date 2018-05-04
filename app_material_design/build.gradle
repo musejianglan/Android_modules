@@ -33,6 +33,7 @@ dependencies {
     implementation externalAndroidSupportAppcompatV7
     implementation externalAndroidSupportConstraintConstraintLayout
     implementation externalAndroidSupportSupportV4
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation externalJunit
     androidTestImplementation externalAndoridSupportTestRunner
     androidTestImplementation externalAndroidSupportTestEspressoCore

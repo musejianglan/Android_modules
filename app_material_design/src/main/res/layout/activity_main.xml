@@ -26,13 +26,20 @@
 
 
         <!--内容-->
-        <FrameLayout
+        <android.support.v7.widget.LinearLayoutCompat
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <android.support.v7.widget.AppCompatButton
+                android:text="tablayout"
+                android:onClick="tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        </FrameLayout>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
 
         <android.support.design.widget.NavigationView
             android:id="@+id/view_navigation"
