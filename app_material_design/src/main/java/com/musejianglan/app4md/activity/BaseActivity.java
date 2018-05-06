@@ -1,9 +1,13 @@
 package com.musejianglan.app4md.activity;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.musejianglan.app4md.activity.tab.FixedTabActivity;
+import com.musejianglan.app4md.activity.tab.TabListActivity;
 
 /**
  * @author: liulei
@@ -19,5 +23,9 @@ public class BaseActivity extends AppCompatActivity {
 
         Log.e(TAG, "msg >>>>>> " + msg);
 
+    }
+
+    public void startActivity(Class clazz){
+        startActivity(new Intent(this,clazz));
     }
 }

@@ -2,18 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.tab.FixedTabActivity">
+    tools:context=".activity.tab.TabWithIconActivity">
 
     <android.support.design.widget.TabLayout
-        android:id="@+id/fixed_tablayout"
+        android:id="@+id/fixed_tablayout22"
         app:tabMode="fixed"
         app:tabIndicatorColor="@android:color/holo_orange_light"
         app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"
         android:layout_width="match_parent"
-        app:tabGravity="center"
+        app:tabGravity="fill"
         android:layout_height="wrap_content">
 
     </android.support.design.widget.TabLayout>
@@ -23,7 +23,7 @@
         app:tabGravity="fill"
         app:tabIndicatorHeight="4dp"
         app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"
-        app:tabBackground="@color/colorAccent"
+        app:tabBackground="@color/accent"
         android:id="@+id/fixed_tablayout2"
         android:layout_marginTop="16dp"
         app:tabTextColor="@android:color/white"
@@ -33,16 +33,19 @@
 
         <android.support.design.widget.TabItem
             android:text="社会"
+            android:icon="@drawable/book"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <android.support.design.widget.TabItem
             android:text="国内"
+            android:icon="@drawable/clound"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <android.support.design.widget.TabItem
             android:text="国外"
+            android:icon="@drawable/home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

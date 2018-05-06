@@ -24,6 +24,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <Button
+            android:onClick="scrollTab"
+            android:text="基本用法-滚动模式"
+            android:layout_margin="4dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="tabWithIcon"
+            android:text="基本用法-添加icon"
+            android:layout_margin="4dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="tabTopWithViewPager"
+            android:text="基本用法-viewpager_bottom"
+            android:layout_margin="4dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="tabBottomWithViewPager"
+            android:text="基本用法-viewpager_top"
+            android:layout_margin="4dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
 
 

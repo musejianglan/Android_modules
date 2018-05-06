@@ -36,7 +36,11 @@
             android:name=".activity.tab.TabListActivity"
             android:label="@string/title_activity_tab_list"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.tab.FixedTabActivity"></activity>
+        <activity android:name=".activity.tab.FixedTabActivity" />
+        <activity android:name=".activity.tab.ScrollTabActivity" />
+        <activity android:name=".activity.tab.TabWithIconActivity" />
+        <activity android:name=".activity.tab.TabVpActivity" />
+        <activity android:name=".activity.tab.TabBottomVpActivity"></activity>
     </application>
 
 </manifest>
