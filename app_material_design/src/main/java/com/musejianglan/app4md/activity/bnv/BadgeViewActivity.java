@@ -3,6 +3,7 @@ package com.musejianglan.app4md.activity.bnv;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -58,6 +59,8 @@ public class BadgeViewActivity extends AppCompatActivity {
         // add badge
         return new QBadgeView(this)
                 .setBadgeNumber(number)
+                .setExactMode(true)
+                .setBadgeGravity(Gravity.END|Gravity.TOP)
                 .setGravityOffset(12, 2, true)
                 .bindTarget(binding.bnve.getBottomNavigationItemView(position))
                 .setOnDragStateChangedListener(new Badge.OnDragStateChangedListener() {
