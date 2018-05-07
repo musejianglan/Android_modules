@@ -28,12 +28,19 @@
         <!--内容-->
         <android.support.v7.widget.LinearLayoutCompat
             android:id="@+id/content"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.AppCompatButton
+            <Button
                 android:text="tablayout"
                 android:onClick="tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="bottomnavigationview"
+                android:onClick="bnv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

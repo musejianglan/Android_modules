@@ -40,7 +40,14 @@
         <activity android:name=".activity.tab.ScrollTabActivity" />
         <activity android:name=".activity.tab.TabWithIconActivity" />
         <activity android:name=".activity.tab.TabVpActivity" />
-        <activity android:name=".activity.tab.TabBottomVpActivity"></activity>
+        <activity android:name=".activity.tab.TabBottomVpActivity" />
+        <activity android:name=".activity.bnv.BNVListActivity" />
+        <activity android:name=".activity.bnv.StyleActivity" />
+        <activity android:name=".activity.bnv.WithViewPagerActivity" />
+        <activity android:name=".activity.bnv.SetupWithViewPagerActivity" />
+        <activity android:name=".activity.bnv.BadgeViewActivity" />
+        <activity android:name=".activity.bnv.CenterFabActivity" />
+        <activity android:name=".activity.bnv.MyBnvActivity"></activity>
     </application>
 
 </manifest>

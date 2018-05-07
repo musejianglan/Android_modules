@@ -9,19 +9,19 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
 import com.musejianglan.app4md.R;
+import com.musejianglan.app4md.activity.bnv.BNVListActivity;
 import com.musejianglan.app4md.activity.tab.TabListActivity;
 import com.musejianglan.app4md.fragment.HomeFragment;
 import com.musejianglan.app4md.fragment.SettingFragment;
 import com.musejianglan.app4md.fragment.ThemeFragment;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private DrawerLayout mDrawerLayout;
     private NavigationView mNavigationView;
@@ -148,5 +148,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         startActivity(new Intent(MainActivity.this,TabListActivity.class));
 
+    }
+
+    public void bnv(View view) {
+        startActivity(BNVListActivity.class);
     }
 }
