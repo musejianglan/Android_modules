@@ -1,31 +1,12 @@
 package com.promise.picapp.glide;
 
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ImageView;
 
-import com.bumptech.glide.DrawableRequestBuilder;
-import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
-import com.bumptech.glide.request.Request;
-import com.bumptech.glide.request.animation.GlideAnimation;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.target.SizeReadyCallback;
-import com.bumptech.glide.request.target.Target;
 import com.promise.picapp.R;
-
-import jp.wasabeef.glide.transformations.BlurTransformation;
-import jp.wasabeef.glide.transformations.ColorFilterTransformation;
-import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import jp.wasabeef.glide.transformations.CropSquareTransformation;
-import jp.wasabeef.glide.transformations.CropTransformation;
-import jp.wasabeef.glide.transformations.GrayscaleTransformation;
-import jp.wasabeef.glide.transformations.MaskTransformation;
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class GlideActivity extends AppCompatActivity {
 
@@ -64,13 +45,13 @@ public class GlideActivity extends AppCompatActivity {
 
 
 
-        Glide.with(this)
+        GlideApp.with(this)
                 .load("https://ws1.sinaimg.cn/large/610dc034ly1fik2q1k3noj20u00u07wh.jpg")
                 .skipMemoryCache(true)
-                .crossFade()//图片平滑加载处理，没有参数默认300毫秒
+//                .crossFade()//图片平滑加载处理，没有参数默认300毫秒
                 .override(1000,5000)
                 .into(image1);
-        Glide.with(this)
+        GlideApp.with(this)
                 .load("https://ws1.sinaimg.cn/large/610dc034ly1fiiiyfcjdoj20u00u0ju0.jpg")
                 .skipMemoryCache(true)
                 .dontAnimate()
@@ -89,7 +70,7 @@ public class GlideActivity extends AppCompatActivity {
         //
 
         //占位图
-        Glide.with(this)
+        GlideApp.with(this)
                 .load("https://ws1.sinaimg.cn/large/610dc034ly1fibksd2mbmj20u011iacx.jpg")
                 .placeholder(R.mipmap.ic_launcher_round)
                 .error(R.mipmap.ic_launcher_round)
@@ -99,14 +80,15 @@ public class GlideActivity extends AppCompatActivity {
 
         String gifUrl = "http://i.kinja-img.com/gawker-media/image/upload/s--B7tUiM5l--/gf2r69yorbdesguga10i.gif";
         String notgifUrl = "http://7xi8d6.com1.z0.glb.clouddn.com/20171211082435_CCblJd_Screenshot.jpeg";
-        Glide.with(GlideActivity.this)
+        GlideApp.with(GlideActivity.this)
                 .load(gifUrl)
 
-                .asBitmap()
+//                .asBitmap()
 
                 .placeholder(R.mipmap.ic_launcher_round)
                 .error(R.mipmap.ic_launcher_round)
                 .priority(Priority.LOW)
+
                 .into(image4);
 
 
@@ -148,27 +130,27 @@ public class GlideActivity extends AppCompatActivity {
         image5 = findViewById(R.id.image5);
         image6 = findViewById(R.id.image6);
         image7 = findViewById(R.id.image7);
-        Glide.with(this)
+        GlideApp.with(this)
                 .load("https://ws1.sinaimg.cn/large/610dc034ly1fibksd2mbmj20u011iacx.jpg")
                 .placeholder(R.mipmap.ic_launcher_round)
                 .error(R.mipmap.ic_launcher_round)
                 .into(image5);
 
         //简单缩略图
-        Glide.with(this)
+        GlideApp.with(this)
                 .load("https://ws1.sinaimg.cn/large/610dc034ly1fibksd2mbmj20u011iacx.jpg")
                 .placeholder(R.mipmap.ic_launcher_round)
                 .error(R.mipmap.ic_launcher_round)
                 .thumbnail(0.1f)
                 .into(image6);
 
-        DrawableRequestBuilder<String> thumbnailRequest = Glide
-                .with( this )
-                .load( "http://7xi8d6.com1.z0.glb.clouddn.com/20171114101305_NIAzCK_rakukoo_14_11_2017_10_12_58_703.jpeg" );//单独的请求缩略图
+//        DrawableRequestBuilder<String> thumbnailRequest = Glide
+//                .with( this )
+//                .load( "http://7xi8d6.com1.z0.glb.clouddn.com/20171114101305_NIAzCK_rakukoo_14_11_2017_10_12_58_703.jpeg" );//单独的请求缩略图
 
-        Glide.with(this)
+        GlideApp.with(this)
                 .load("http://img.zcool.cn/community/01c0a658a1aa25a801219c778e4c6e.gif")
-                .thumbnail(thumbnailRequest)
+//                .thumbnail(thumbnailRequest)
                 .into(image7);
         /**
          * .thumbnail(0.001f)
@@ -180,73 +162,73 @@ public class GlideActivity extends AppCompatActivity {
         //
         image8 = findViewById(R.id.image8);
 
-        SimpleTarget<Bitmap> simpleTarget = new SimpleTarget<Bitmap>() {
-            @Override
-            public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
-                image8.setImageBitmap( resource );
-            }
-        };
-        Glide.with(this)
-                .load("http://7xi8d6.com1.z0.glb.clouddn.com/20171113084220_LuJgqv_sakura.gun_13_11_2017_8_42_12_311.jpeg")
-                .asBitmap()
-                .into(simpleTarget);
+//        SimpleTarget<Bitmap> simpleTarget = new SimpleTarget<Bitmap>() {
+//            @Override
+//            public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+//                image8.setImageBitmap( resource );
+//            }
+//        };
+//        GlideApp.with(this)
+//                .load("http://7xi8d6.com1.z0.glb.clouddn.com/20171113084220_LuJgqv_sakura.gun_13_11_2017_8_42_12_311.jpeg")
+//                .asBitmap()
+//                .into(simpleTarget);
 
-        Glide.with(this)
-                .load("http://7xi8d6.com1.z0.glb.clouddn.com/20171113084220_LuJgqv_sakura.gun_13_11_2017_8_42_12_311.jpeg")
-                .asBitmap()
-                .into(new Target<Bitmap>() {
-                    @Override
-                    public void onLoadStarted(Drawable placeholder) {
-                        log("onLoadStarted");
-                    }
-
-                    @Override
-                    public void onLoadFailed(Exception e, Drawable errorDrawable) {
-
-                        log(e.getMessage());
-                    }
-
-                    @Override
-                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
-
-                        log("resourceready");
-                    }
-
-                    @Override
-                    public void onLoadCleared(Drawable placeholder) {
-                        log("cleard");
-                    }
-
-                    @Override
-                    public void getSize(SizeReadyCallback cb) {
-                        log(""+cb.toString());
-                    }
-
-                    @Override
-                    public void setRequest(Request request) {
-
-                    }
-
-                    @Override
-                    public Request getRequest() {
-                        return null;
-                    }
-
-                    @Override
-                    public void onStart() {
-                        log("sarty");
-                    }
-
-                    @Override
-                    public void onStop() {
-                        log("stop");
-                    }
-
-                    @Override
-                    public void onDestroy() {
-                        log("destroy");
-                    }
-                });
+//        GlideApp.with(this)
+//                .load("http://7xi8d6.com1.z0.glb.clouddn.com/20171113084220_LuJgqv_sakura.gun_13_11_2017_8_42_12_311.jpeg")
+//                .asBitmap()
+//                .into(new Target<Bitmap>() {
+//                    @Override
+//                    public void onLoadStarted(Drawable placeholder) {
+//                        log("onLoadStarted");
+//                    }
+//
+//                    @Override
+//                    public void onLoadFailed(Exception e, Drawable errorDrawable) {
+//
+//                        log(e.getMessage());
+//                    }
+//
+//                    @Override
+//                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+//
+//                        log("resourceready");
+//                    }
+//
+//                    @Override
+//                    public void onLoadCleared(Drawable placeholder) {
+//                        log("cleard");
+//                    }
+//
+//                    @Override
+//                    public void getSize(SizeReadyCallback cb) {
+//                        log(""+cb.toString());
+//                    }
+//
+//                    @Override
+//                    public void setRequest(Request request) {
+//
+//                    }
+//
+//                    @Override
+//                    public Request getRequest() {
+//                        return null;
+//                    }
+//
+//                    @Override
+//                    public void onStart() {
+//                        log("sarty");
+//                    }
+//
+//                    @Override
+//                    public void onStop() {
+//                        log("stop");
+//                    }
+//
+//                    @Override
+//                    public void onDestroy() {
+//                        log("destroy");
+//                    }
+//                });
 
 
         //NotificationTarget notificationTarget = new NotificationTarget()
@@ -275,52 +257,52 @@ public class GlideActivity extends AppCompatActivity {
 
 
 
-        Glide.with(this)
-                .load(url9)
-                .bitmapTransform(new CropCircleTransformation(GlideActivity.this))
-                .into(image9);//圆形裁剪
-
-        Glide.with(this)
-                .load(url10)
-                .bitmapTransform(new CropSquareTransformation(GlideActivity.this))
-                .into(image10);//正方形裁剪
-
-        Glide.with(this)
-                .load(url11)
-                .bitmapTransform(new RoundedCornersTransformation(GlideActivity.this,50,50))
-                .into(image11);//圆角裁剪
-
-        Glide.with(this)
-                .load(url12)
-                .bitmapTransform(new CropTransformation(GlideActivity.this,200,200))
-                .into(image12);//自定义大小裁剪
-
-        Glide.with(this)
-                .load(url13)
-                .bitmapTransform(new ColorFilterTransformation(GlideActivity.this, Color.parseColor("#66ff0000")))
-                .into(image13);//加滤镜（蒙层颜色值）
-        Glide.with(this)
-                .load(url14)
-                .bitmapTransform(new GrayscaleTransformation(GlideActivity.this))
-                .into(image14);//灰度级转换（变成黑白照）
-
-        Glide.with(this)
-                .load(url15)
-                .bitmapTransform(new BlurTransformation(GlideActivity.this))
-                .into(image15);//模糊 默认模糊度25
-        Glide.with(this)
-                .load(url16)
-                .bitmapTransform(new BlurTransformation(GlideActivity.this,15))
-                .into(image16);//模糊
-        //使用构造方法 BlurTransformation(Context context, int radius, int sampling)
-        // radius : 离散半径/模糊度（单参构造器 - 默认25）
-        // sampling : 取样（单参构造器 - 默认1） 如果取2，横向、纵向都会每两个像素点取一个像素点(即:图片宽高变为原来一半)
-
-
-        Glide.with(this)
-                .load(url17)
-                .bitmapTransform(new MaskTransformation(GlideActivity.this,R.mipmap.ic_launcher_round))
-                .into(image17);//遮罩掩饰（视图叠加处理）
+//        Glide.with(this)
+//                .load(url9)
+//                .bitmapTransform(new CropCircleTransformation(GlideActivity.this))
+//                .into(image9);//圆形裁剪
+//
+//        Glide.with(this)
+//                .load(url10)
+//                .bitmapTransform(new CropSquareTransformation(GlideActivity.this))
+//                .into(image10);//正方形裁剪
+//
+//        Glide.with(this)
+//                .load(url11)
+//                .bitmapTransform(new RoundedCornersTransformation(GlideActivity.this,50,50))
+//                .into(image11);//圆角裁剪
+//
+//        Glide.with(this)
+//                .load(url12)
+//                .bitmapTransform(new CropTransformation(GlideActivity.this,200,200))
+//                .into(image12);//自定义大小裁剪
+//
+//        Glide.with(this)
+//                .load(url13)
+//                .bitmapTransform(new ColorFilterTransformation(GlideActivity.this, Color.parseColor("#66ff0000")))
+//                .into(image13);//加滤镜（蒙层颜色值）
+//        Glide.with(this)
+//                .load(url14)
+//                .bitmapTransform(new GrayscaleTransformation(GlideActivity.this))
+//                .into(image14);//灰度级转换（变成黑白照）
+//
+//        Glide.with(this)
+//                .load(url15)
+//                .bitmapTransform(new BlurTransformation(GlideActivity.this))
+//                .into(image15);//模糊 默认模糊度25
+//        Glide.with(this)
+//                .load(url16)
+//                .bitmapTransform(new BlurTransformation(GlideActivity.this,15))
+//                .into(image16);//模糊
+//        //使用构造方法 BlurTransformation(Context context, int radius, int sampling)
+//        // radius : 离散半径/模糊度（单参构造器 - 默认25）
+//        // sampling : 取样（单参构造器 - 默认1） 如果取2，横向、纵向都会每两个像素点取一个像素点(即:图片宽高变为原来一半)
+//
+//
+//        Glide.with(this)
+//                .load(url17)
+//                .bitmapTransform(new MaskTransformation(GlideActivity.this,R.mipmap.ic_launcher_round))
+//                .into(image17);//遮罩掩饰（视图叠加处理）
 
 
 

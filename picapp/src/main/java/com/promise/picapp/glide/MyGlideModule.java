@@ -1,10 +1,12 @@
 package com.promise.picapp.glide;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.GlideBuilder;
+import com.bumptech.glide.Registry;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool;
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
@@ -27,15 +29,15 @@ public class MyGlideModule implements GlideModule {
         //builder.setResizeService()
         Log.e("123","argb-----8888");
 
-        MemorySizeCalculator calculator = new MemorySizeCalculator(context);
-        int defaultMemoryCacheSize = calculator.getMemoryCacheSize();
-        int defaultBitmapPoolSize = calculator.getBitmapPoolSize();
+//        MemorySizeCalculator calculator = new MemorySizeCalculator(builder);
+//        int defaultMemoryCacheSize = calculator.getMemoryCacheSize();
+//        int defaultBitmapPoolSize = calculator.getBitmapPoolSize();
 
-        int customMemoryCacheSize = (int) (1.2 * defaultMemoryCacheSize);
-        int customBitmapPoolSize = (int) (1.2 * defaultBitmapPoolSize);
+//        int customMemoryCacheSize = (int) (1.2 * defaultMemoryCacheSize);
+//        int customBitmapPoolSize = (int) (1.2 * defaultBitmapPoolSize);
 
-        builder.setMemoryCache( new LruResourceCache( customMemoryCacheSize ));
-        builder.setBitmapPool( new LruBitmapPool( customBitmapPoolSize ));
+//        builder.setMemoryCache( new LruResourceCache( customMemoryCacheSize ));
+//        builder.setBitmapPool( new LruBitmapPool( customBitmapPoolSize ));
 
         //默认值作为基线并调整，上面的代码是非常有用的。例如，如果你想要你的app比默认多20%的缓存，使用上面的变量来计算它们：
 
@@ -48,8 +50,13 @@ public class MyGlideModule implements GlideModule {
 
     }
 
+//    @Override
+//    public void registerComponents(Context context, Glide glide) {
+//
+//    }
+
     @Override
-    public void registerComponents(Context context, Glide glide) {
+    public void registerComponents(@NonNull Context context, @NonNull Glide glide, @NonNull Registry registry) {
 
     }
 }
