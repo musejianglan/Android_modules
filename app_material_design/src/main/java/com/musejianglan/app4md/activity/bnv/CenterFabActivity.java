@@ -2,6 +2,7 @@ package com.musejianglan.app4md.activity.bnv;
 
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
+import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -39,6 +40,11 @@ public class CenterFabActivity extends AppCompatActivity {
         initData();
         initView();
         initEvent();
+
+        BottomNavigationItemView[] bottomNavigationItemViews = binding.bnve.getBottomNavigationItemViews();
+//        bottomNavigationItemViews[2].setVisibility(View.GONE);
+
+
     }
 
 
