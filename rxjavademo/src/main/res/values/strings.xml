@@ -2,4 +2,18 @@
     <string name="app_name">RxJavademo</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header">
+
+        /@Header 作用：添加请求头 和 /@Headers 作用： 添加不固定的请求头 \n\n
+         区别在于使用场景和使用方式 \n\n
+         1. 使用场景：@Header用于添加不固定的请求头，@Headers用于添加固定的请求头 \n\n
+         2. 使用方式：@Header作用于方法的参数；@Headers作用于方法
+    </string>
+    <string name="post">1.使用 @Body 注解，指定一个对象作为 request body \n\n
+    2.@Field  @FieldMap\n
+   作用：发送 Post请求 时提交请求的表单字段\n
+   具体使用：与 @FormUrlEncoded 注解配合使用\n
+    </string>
+    <string name="synch_asynch"> 同步 call.execute() 注意：默认在调用方法所在的线程\n\n 异步  call.enqueue(new Callback/<T />()) </string>
+    <string name="path_query">path是url的缺省值, 例：@GET("users/{user}/repos")，{user} 会被替换为方法的第一个参数 user（被@Path注解作用） \n\n  @Query和@QueryMap 作用：用于 @GET 方法的查询参数（Query = Url 中 ‘?’ 后面的 key-value） </string>
 </resources>
