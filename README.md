@@ -55,6 +55,7 @@ dependencies {
 ```
 ## Android设计模式[mvpdemo](https://github.com/musejianglan/Android_modules/tree/master/mvpdemo)
 * mvp
+* mvvm 进行中[mvvmdemo](https://github.com/musejianglan/Android_modules/tree/master/mvvmdemo)
 
 ## 依赖注入[IOCandroiddemo](https://github.com/musejianglan/Android_modules/tree/master/iocandroiddemo)
 * ButterKnife
