@@ -1,1 +1,5 @@
-include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo', ':iocandroiddemo', ':app_exit', ':app_material_design', ':HenCoder_view', ':databindingdemo', ':droidpermission', ':floatwindow', ':droidshortcuts', ':mydialog', ':animationdemo', ':mvvmdemo', ':bnvexlib', ':ArchitectureComponents', ':baseutilslib'
+include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo',
+        ':iocandroiddemo', ':app_exit', ':app_material_design', ':HenCoder_view',
+        ':databindingdemo', ':droidpermission', ':floatwindow', ':droidshortcuts',
+        ':mydialog', ':animationdemo', ':mvvmdemo', ':bnvexlib',
+        ':ArchitectureComponents', ':baseutilslib'
