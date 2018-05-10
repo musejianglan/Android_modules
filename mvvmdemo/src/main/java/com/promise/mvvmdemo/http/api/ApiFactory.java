@@ -2,7 +2,6 @@ package com.promise.mvvmdemo.http.api;
 
 import com.promise.mvvmdemo.bean.BaseResult;
 import com.promise.mvvmdemo.bean.Meizi;
-import com.promise.mvvmdemo.http.DefaultObserver;
 import com.promise.mvvmdemo.http.RetrofitClient;
 
 import java.util.List;

@@ -2,11 +2,9 @@ package com.promise.mvvmdemo.http;
 
 import android.app.Activity;
 import android.net.ParseException;
-import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.google.gson.JsonParseException;
-import com.promise.mvvmdemo.R;
 import com.promise.mvvmdemo.bean.BaseResult;
 import com.promise.mvvmdemo.http.interfaces.IResult;
 import com.promise.mvvmdemo.utils.CommonDialogUtils;

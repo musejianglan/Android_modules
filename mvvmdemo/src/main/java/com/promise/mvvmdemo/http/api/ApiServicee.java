@@ -19,6 +19,6 @@ public interface ApiServicee {
     String API_SERVER_URL = HOST + "api/data/";
 
 
-    @GET("福利/10/1")
+    @GET("data/福利/30/1")
     Observable<BaseResult<List<Meizi>>> getMezi();
 }

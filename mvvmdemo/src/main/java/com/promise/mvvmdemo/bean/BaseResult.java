@@ -8,7 +8,7 @@ public class BaseResult<T> {
 
     private int code;
     private String msg;
-    private T data;
+    private T results;
     private boolean error;
 
     public int getCode() {
@@ -27,12 +27,12 @@ public class BaseResult<T> {
         this.msg = msg;
     }
 
-    public T getData() {
-        return data;
+    public T getResults() {
+        return results;
     }
 
-    public void setData(T data) {
-        this.data = data;
+    public void setResults(T results) {
+        this.results = results;
     }
 
     public boolean isError() {
