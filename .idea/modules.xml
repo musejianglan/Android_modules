@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android_modules.iml" filepath="$PROJECT_DIR$/Android_modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArchitectureComponents/ArchitectureComponents.iml" filepath="$PROJECT_DIR$/ArchitectureComponents/ArchitectureComponents.iml" />
       <module fileurl="file://$PROJECT_DIR$/HenCoder_view/HenCoder_view.iml" filepath="$PROJECT_DIR$/HenCoder_view/HenCoder_view.iml" />
       <module fileurl="file://$PROJECT_DIR$/animationdemo/animationdemo.iml" filepath="$PROJECT_DIR$/animationdemo/animationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_exit/app_exit.iml" filepath="$PROJECT_DIR$/app_exit/app_exit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_material_design/app_material_design.iml" filepath="$PROJECT_DIR$/app_material_design/app_material_design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseutilslib/baseutilslib.iml" filepath="$PROJECT_DIR$/baseutilslib/baseutilslib.iml" />
       <module fileurl="file://$PROJECT_DIR$/bnvexlib/bnvexlib.iml" filepath="$PROJECT_DIR$/bnvexlib/bnvexlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/databindingdemo/databindingdemo.iml" filepath="$PROJECT_DIR$/databindingdemo/databindingdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/droidpermission/droidpermission.iml" filepath="$PROJECT_DIR$/droidpermission/droidpermission.iml" />
