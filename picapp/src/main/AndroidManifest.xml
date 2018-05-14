@@ -12,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,18 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".glide.GlideActivity"></activity>
-        <activity android:name=".glide.GlideListActivity"></activity>
-        <activity android:name=".picasso.PicassoActivity"></activity>
-        <activity android:name=".fresco.FrescoActivity"></activity>
-        <activity android:name=".leakcanary.CanaryActivity"></activity>
+        <activity android:name=".glide.GlideActivity" />
+        <activity android:name=".glide.GlideListActivity" />
+        <activity android:name=".picasso.PicassoActivity" />
+        <activity android:name=".fresco.FrescoActivity" />
+        <activity android:name=".leakcanary.CanaryActivity" />
 
         <service
             android:name=".leakcanary.LeakUploadService"
             android:enabled="false"
-            android:exported="false"></service>
+            android:exported="false" />
 
-        <activity android:name=".webp.WebpActivity"></activity>
+        <activity android:name=".webp.WebpActivity" />
+        <activity android:name=".thirdview.PhotoViewActivity"></activity>
     </application>
 
 </manifest>

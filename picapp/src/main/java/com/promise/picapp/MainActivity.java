@@ -12,13 +12,14 @@ import com.promise.picapp.glide.GlideActivity;
 import com.promise.picapp.glide.GlideListActivity;
 import com.promise.picapp.leakcanary.CanaryActivity;
 import com.promise.picapp.picasso.PicassoActivity;
+import com.promise.picapp.thirdview.PhotoViewActivity;
 import com.promise.picapp.webp.WebpActivity;
 
 public class MainActivity extends ListActivity {
 
-    String[] actName = {"Glide","GlideListActivity","picasso:picasso","facebook:fresco","内存检测","webp图片格式"};
+    String[] actName = {"Glide","GlideListActivity","picasso:picasso","facebook:fresco","内存检测","webp图片格式","缩放图片"};
     Class[] clazz = {GlideActivity.class,GlideListActivity.class,PicassoActivity.class, FrescoActivity.class,
-            CanaryActivity.class, WebpActivity.class
+            CanaryActivity.class, WebpActivity.class, PhotoViewActivity.class
     };
 
     @Override
