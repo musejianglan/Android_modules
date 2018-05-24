@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/databindingdemo/databindingdemo.iml" filepath="$PROJECT_DIR$/databindingdemo/databindingdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/droidpermission/droidpermission.iml" filepath="$PROJECT_DIR$/droidpermission/droidpermission.iml" />
       <module fileurl="file://$PROJECT_DIR$/droidshortcuts/droidshortcuts.iml" filepath="$PROJECT_DIR$/droidshortcuts/droidshortcuts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/espressotests/espressotests.iml" filepath="$PROJECT_DIR$/espressotests/espressotests.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventbusdemo/eventbusdemo.iml" filepath="$PROJECT_DIR$/eventbusdemo/eventbusdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/floatwindow/floatwindow.iml" filepath="$PROJECT_DIR$/floatwindow/floatwindow.iml" />
       <module fileurl="file://$PROJECT_DIR$/iocandroiddemo/iocandroiddemo.iml" filepath="$PROJECT_DIR$/iocandroiddemo/iocandroiddemo.iml" />
