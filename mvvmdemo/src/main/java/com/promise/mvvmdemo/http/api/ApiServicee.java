@@ -21,4 +21,7 @@ public interface ApiServicee {
 
     @GET("data/福利/30/1")
     Observable<BaseResult<List<Meizi>>> getMezi();
+
+    @GET("data/福利/1/1")
+    Observable<String> getMezi2();
 }

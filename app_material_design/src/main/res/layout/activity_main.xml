@@ -26,27 +26,13 @@
 
 
         <!--内容-->
-        <android.support.v7.widget.LinearLayoutCompat
+        <FrameLayout
             android:id="@+id/content"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:text="tablayout"
-                android:onClick="tablayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:text="bottomnavigationview"
-                android:onClick="bnv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-
-
-        </android.support.v7.widget.LinearLayoutCompat>
+        </FrameLayout>
 
         <android.support.design.widget.NavigationView
             android:id="@+id/view_navigation"

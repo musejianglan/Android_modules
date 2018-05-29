@@ -138,19 +138,4 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         return true;
     }
 
-    /**
-     * 跳转到tabactivity
-     * author:liulei
-     *
-     * created at 2018/5/4 11:35
-     */
-    public void tablayout(View view) {
-
-        startActivity(new Intent(MainActivity.this,TabListActivity.class));
-
-    }
-
-    public void bnv(View view) {
-        startActivity(BNVListActivity.class);
-    }
 }

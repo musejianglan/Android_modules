@@ -19,4 +19,9 @@ public class ApiFactory<T> {
         return RetrofitClient.getInstance().getRetrofit().create(ApiServicee.class).getMezi();
     }
 
+    public static Observable<String> getApiService2() {
+
+        return RetrofitClient.getInstance().getRetrofit().create(ApiServicee.class).getMezi2();
+    }
+
 }

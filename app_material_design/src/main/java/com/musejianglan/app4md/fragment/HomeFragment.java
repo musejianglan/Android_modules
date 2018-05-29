@@ -1,6 +1,7 @@
 package com.musejianglan.app4md.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,16 +9,21 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.musejianglan.app4md.R;
+import com.musejianglan.app4md.activity.ConstraintLayoutActivity;
+import com.musejianglan.app4md.activity.bnv.BNVListActivity;
+import com.musejianglan.app4md.activity.tab.TabListActivity;
+import com.musejianglan.app4md.constraintLayout.GuidelinesActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements View.OnClickListener {
 
     FloatingActionButton fab;
 
@@ -62,7 +68,35 @@ public class HomeFragment extends Fragment {
                 snackbar.show();
             }
         });
+
+        Button tablayout = view.findViewById(R.id.tablayout);
+        Button bnv = view.findViewById(R.id.bottom_nav);
+        Button constraintLayout = view.findViewById(R.id.constraintLayout);
+        Button guidelines = view.findViewById(R.id.guidelines);
+        tablayout.setOnClickListener(this);
+        bnv.setOnClickListener(this);
+        constraintLayout.setOnClickListener(this);
+        guidelines.setOnClickListener(this);
+
         return view;
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.tablayout:
+                startActivity(new Intent(getActivity(),TabListActivity.class));
+                break;
+            case R.id.bottom_nav:
+                startActivity(new Intent(getActivity(),BNVListActivity.class));
+                break;
+            case R.id.constraintLayout:
+                startActivity(new Intent(getActivity(),ConstraintLayoutActivity.class));
+                break;
+            case R.id.guidelines:
+                startActivity(new Intent(getActivity(),GuidelinesActivity.class));
+                break;
+
+        }
+    }
 }

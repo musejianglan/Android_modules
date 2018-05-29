@@ -47,7 +47,8 @@
         <activity android:name=".activity.bnv.SetupWithViewPagerActivity" />
         <activity android:name=".activity.bnv.BadgeViewActivity" />
         <activity android:name=".activity.bnv.CenterFabActivity" />
-        <activity android:name=".activity.bnv.MyBnvActivity"></activity>
+        <activity android:name=".activity.bnv.MyBnvActivity" />
+        <activity android:name=".constraintLayout.GuidelinesActivity"></activity>
     </application>
 
 </manifest>
