@@ -29,12 +29,12 @@ public class RegistViewModel extends ViewModel implements LifecycleObserver {
 
 
     MutableLiveData<RegisterBean> register = new MutableLiveData<RegisterBean>();
-    MutableLiveData<Integer> code = new MutableLiveData<Integer>();
+    public MutableLiveData<Integer> code = new MutableLiveData<Integer>();
 
 
-    public MutableLiveData<Integer> getCode() {
+    public void getCode() {
         countDownTimer.start();
-        return code;
+        //网络请求
     }
 
 

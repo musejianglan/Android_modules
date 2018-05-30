@@ -31,6 +31,18 @@ public class RegisterActivity extends AppCompatActivity {
         binding.setClickable(true);
         registViewModel = ViewModelProviders.of(this).get(RegistViewModel.class);
         getLifecycle().addObserver(registViewModel);
+
+        registViewModel.code.observe(this, new Observer<Integer>() {
+            @Override
+            public void onChanged(@Nullable Integer integer) {
+                if (integer > 0) {
+                    binding.btCode.setText(integer+"秒后重新获取");
+                }else {
+                    binding.setClickable(true);
+                    binding.btCode.setText("再次获取验证码");
+                }
+            }
+        });
     }
 
     public void code(View view){
@@ -41,17 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
             binding.setClickable(false);
 //            countDownTimer.start();
 
-            registViewModel.getCode().observe(this, new Observer<Integer>() {
-                @Override
-                public void onChanged(@Nullable Integer integer) {
-                    if (integer > 0) {
-                        binding.btCode.setText(integer+"秒后重新获取");
-                    }else {
-                        binding.setClickable(true);
-                        binding.btCode.setText("再次获取验证码");
-                    }
-                }
-            });
+            registViewModel.getCode();
 
         }else {
             Toast.makeText(getApplicationContext(), "请输入正确手机号", Toast.LENGTH_SHORT).show();
@@ -76,24 +78,4 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-//    CountDownTimer countDownTimer = new CountDownTimer(1000*60,1000) {
-//        @Override
-//        public void onTick(long millisUntilFinished) {
-//            binding.btCode.setText((millisUntilFinished / 1000)+"秒后重新获取");
-//            Log.e("liu", "=====>>>>> "+millisUntilFinished);
-//
-//        }
-//
-//        @Override
-//        public void onFinish() {
-//            binding.setClickable(true);
-//            binding.btCode.setText("再次获取验证码");
-//        }
-//    };
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-//        countDownTimer.cancel();
-    }
 }

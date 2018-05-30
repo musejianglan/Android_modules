@@ -70,6 +70,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 100 && resultCode == 200) {
             Toast.makeText(getApplicationContext(), "注册成功", Toast.LENGTH_SHORT).show();
+            User user = new User();
+            user.setName("注册成功");
+            user.setPassword("ssss");
+            binding.setUser(user);
         }
     }
 }
