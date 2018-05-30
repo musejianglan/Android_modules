@@ -19,7 +19,7 @@
 * RxJavaJoins未完成
 * RxBinding未完成
 * RxBus未完成
-* RxPermissions未完成
+* RxPermissions
 * RxLifecycle未完成
 * RxBinding未完成
 

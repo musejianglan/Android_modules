@@ -38,10 +38,10 @@ public class RegistViewModel extends ViewModel implements LifecycleObserver {
     }
 
 
-    CountDownTimer countDownTimer = new CountDownTimer(1000*60,1000) {
+    CountDownTimer countDownTimer = new CountDownTimer(1000 * 60, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
-            Log.e("liu", "=====>>>>> "+millisUntilFinished);
+            Log.e("liu", "=====>>>>> " + millisUntilFinished);
 
             code.setValue((int) (millisUntilFinished / 1000));
         }
@@ -51,7 +51,7 @@ public class RegistViewModel extends ViewModel implements LifecycleObserver {
         }
     };
 
-    public MutableLiveData<RegisterBean> regist(String phone){
+    public MutableLiveData<RegisterBean> regist(String phone) {
         final RegisterBean registerBean = new RegisterBean();
 
         HomeRepository.getGank(new IResult<String>() {

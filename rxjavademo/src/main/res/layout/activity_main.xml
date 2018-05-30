@@ -10,6 +10,24 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="rxPermissions_request"
+        android:text="RxPermissions1-request"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="rxPermissions_requestEach"
+        android:text="RxPermissions2-requestEach"/>
+
+   <!-- <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="rxPermissions3"
+        android:text="RxPermissions3"/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onGson"
         android:text="gson"/>
 
