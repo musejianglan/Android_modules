@@ -4,9 +4,8 @@ import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.musejianglan.rxjavademo.retrofit_demo.RetrofitActivity;
@@ -52,21 +51,18 @@ public class MainActivity extends AppCompatActivity {
                     public void accept(Boolean aBoolean) throws Exception {
                         if (aBoolean) {
                             //所有权限都开启aBoolean才为true，否则为false
-                            toast("权限已开启");
+                            toast(null,"权限已开启");
                         } else {
-                            toast("权限被拒绝，请在设置里面开启相应权限，若无相应权限会影响使用");
+                            toast(null,"权限被拒绝，请在设置里面开启相应权限，若无相应权限会影响使用");
                         }
                     }
                 });
     }
-    Toast toast;
-    private void toast(String msg) {
-        if (toast == null) {
-            toast = Toast.makeText(this, msg, Toast.LENGTH_SHORT);
-        }else {
-            toast.setText(msg);
+    private void toast(Permission permission, String msg) {
+        if (permission != null) {
+            Log.e("123", permission.name +" ===>> " + permission.granted);
         }
-        toast.show();
+        Toast.makeText(this, (permission!=null?permission.name:"") + msg, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -77,13 +73,14 @@ public class MainActivity extends AppCompatActivity {
                     public void accept(Permission permission) throws Exception {
                         if (permission.granted) {
                             // 用户已经同意该权限
-                            toast("用户已经同意该权限");
+
+                            toast(permission,"用户已经同意该权限");
                         } else if (permission.shouldShowRequestPermissionRationale) {
                             // 用户拒绝了该权限，没有选中『不再询问』（Never ask again）,那么下次再次启动时，还会提示请求权限的对话框
-                            toast("用户拒绝了该权限");
+                            toast(permission,"用户拒绝了该权限");
                         } else {
                             // 用户拒绝了该权限，并且选中『不再询问』，提醒用户手动打开权限
-                            toast("权限被拒绝，请在设置里面开启相应权限，若无相应权限会影响使用");
+                            toast(permission,"权限被拒绝，请在设置里面开启相应权限，若无相应权限会影响使用");
                         }
                     }
                 });
