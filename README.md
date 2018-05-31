@@ -21,7 +21,6 @@
 * RxBus未完成
 * RxPermissions
 * RxLifecycle未完成
-* RxBinding未完成
 
 ## 事件总线 [eventbusdemo](https://github.com/musejianglan/Android_modules/tree/master/eventbusdemo)
 * EventBus
