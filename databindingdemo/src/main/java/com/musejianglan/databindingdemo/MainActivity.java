@@ -30,16 +30,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         viewDataBinding.setImgUrl("http://7xi8d6.com1.z0.glb.clouddn.com/20180129074038_O3ydq4_Screenshot.jpeg");
 
-        viewDataBinding.btn1.setText("绑定多种数据类型");
+        viewDataBinding.btn4.setText("绑定多种数据类型");
 
         viewDataBinding.textAge.setText("更改age:"+2222);
+
+        viewDataBinding.btn6.setText("asdfasdf");
+
+        viewDataBinding.btn7.setText("ddddd");
+
+        viewDataBinding.popo.setText("54545");
+
     }
 
     @Override
     public void onClick(View v) {
 
         switch (v.getId()) {
-            case R.id.btn_1:
+            case R.id.btn_4:
                 toast("绑定多种数据类型");
                 startActivity(new Intent(MainActivity.this,DataTypeActivity.class));
                 break;
