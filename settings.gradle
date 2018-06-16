@@ -1,4 +1,4 @@
-include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo', ':espressotests',
+include ':app', ':rxjavademo', ':mvpdemo', ':picapp', ':eventbusdemo', ':espressotests', ':bluetoothdemo',
         ':iocandroiddemo', ':app_exit', ':app_material_design', ':HenCoder_view',
         ':databindingdemo', ':droidpermission', ':floatwindow', ':droidshortcuts',
         ':mydialog', ':animationdemo', ':mvvmdemo', ':bnvexlib',
