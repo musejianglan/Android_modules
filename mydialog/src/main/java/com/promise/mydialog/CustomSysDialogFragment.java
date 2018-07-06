@@ -1,4 +1,10 @@
+/*
+ * Copyright (c) 2018.
+ *
+ */
+
 package com.promise.mydialog;
+
 
 import android.app.Dialog;
 import android.os.Bundle;
