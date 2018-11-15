@@ -35,7 +35,7 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
 
 
-    compile 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'com.airbnb.android:lottie:2.5.4'
 }
